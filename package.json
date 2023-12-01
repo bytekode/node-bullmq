@@ -1,0 +1,21 @@
+{
+  "name": "node-bullmq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bull-board/express": "^5.10.1",
+    "bullmq": "^4.14.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "sharp": "^0.33.0",
+    "uuid": "^9.0.1"
+  }
+}
