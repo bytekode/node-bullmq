@@ -50,7 +50,7 @@ app.post("/upload", async function (req, res) {
     if (!image) return res.sendStatus(400);
     const imageName = path.parse(image.name).name;
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 10; i++) {
       // 
       const id = uuidv4();
       await addJob({

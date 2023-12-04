@@ -14,7 +14,7 @@ function processUploadedImages(job) {
     Promise.all(sizes.map(processImage));
     
     let counter = 0;
-    for (let i = 0; i < 10_000_000_000; i++) {
+    for (let i = 0; i < 5_000_000_000; i++) {
         counter++;
     };
 }

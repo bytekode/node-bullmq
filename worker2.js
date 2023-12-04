@@ -18,13 +18,4 @@ const workerOptions = {
   
 const worker = new Worker("imageJobQueue", workerHandler, workerOptions);
 
-worker.on('completed', (job) => {
-  // await job.remove();
-  console.log(`Job with ID ${job.id} has been completed.`);
-});
-
-worker.on('failed', (job, err) => {
-  console.error(`Job with ID ${job.id} has failed with error: ${err.message}`);
-});
-
-console.log("Worker 1 started!");
+console.log("Worker 2 started!");
