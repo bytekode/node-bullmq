@@ -4,6 +4,9 @@ module.exports = {
     es2021: true,
     node: true,
   },
+  plugins: [
+    'json-format',
+  ],
   extends: 'airbnb-base',
   overrides: [
     {
