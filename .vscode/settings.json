@@ -1,0 +1,12 @@
+{
+  "cSpell.words": [
+    "Bullmq"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "editor.formatOnSave": false
+}
