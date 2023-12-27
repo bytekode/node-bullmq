@@ -25,6 +25,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  ignorePatterns: ['!.lintstagedrc.json'],
   rules: {
   },
 };
