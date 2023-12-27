@@ -1,21 +1,20 @@
-const { Worker } = require("bullmq");
+const { Worker } = require('bullmq');
 
-const { processUploadedImages } = require("./utils");
+const { processUploadedImages } = require('./utils');
 
 const workerHandler = (job) => {
-  console.log("Starting job:", job.id, job.data.uuid, job.name);
+  console.log('Starting job:', job.id, job.data.uuid, job.name);
   processUploadedImages(job.data);
-  console.log("Finished job:", job.id, job.data.uuid, job.name);
-  return;
+  console.log('Finished job:', job.id, job.data.uuid, job.name);
 };
 
 const workerOptions = {
-    connection: {
-      host: "localhost",
-      port: 6379,
-    },
-  };
-  
-const worker = new Worker("imageJobQueue", workerHandler, workerOptions);
+  connection: {
+    host: 'localhost',
+    port: 6379,
+  },
+};
 
-console.log("Worker 2 started!");
+(() => new Worker('imageJobQueue', workerHandler, workerOptions))();
+
+console.log('Worker 2 started!');
